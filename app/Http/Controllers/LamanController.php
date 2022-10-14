@@ -31,4 +31,9 @@ class LamanController extends Controller
     {
         return view('tampilan.laman.tentang');
     }
+
+    public function katalog(): Factory|View|Application
+    {
+        return view('tampilan.laman.katalog');
+    }
 }
