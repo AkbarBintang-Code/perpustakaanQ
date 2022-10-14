@@ -11,7 +11,7 @@
                     <ul>
                         <li><i class="bx bx-chevron-right"></i><a href="{{ route('beranda') }}">Beranda</a></li>
                         <li><i class="bx bx-chevron-right"></i><a href="#">Katalog</a></li>
-                        <li><i class="bx bx-chevron-right"></i><a href="#">Transaksi</a></li>
+                        <li><i class="bx bx-chevron-right"></i><a href="{{ route('laman.transaksi') }}">Transaksi</a></li>
                         <li><i class="bx bx-chevron-right"></i><a href="{{ route('laman.tentang') }}">Tentang</a></li>
                     </ul>
                 </div>

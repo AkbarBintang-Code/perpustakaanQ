@@ -5,7 +5,7 @@
             <ul>
                 <li><a @class(['active' => url()->current() === route('beranda')]) href="{{ route('beranda') }}">Beranda</a></li>
                 <li><a href="#">Katalog</a></li>
-                <li><a href="#">Transaksi</a></li>
+                <li><a @class(['active' => url()->current() === route('laman.transaksi')]) href="{{ route('laman.transaksi') }}">Transaksi</a></li>
                 <li><a @class(['active' => url()->current() === route('laman.tentang')]) href="{{ route('laman.tentang') }}">Tentang</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
