@@ -4,7 +4,7 @@
         <nav class="navbar order-last order-lg-0" id="navbar">
             <ul>
                 <li><a @class(['active' => url()->current() === route('beranda')]) href="{{ route('beranda') }}">Beranda</a></li>
-                <li><a href="#">Katalog</a></li>
+                <li><a @class(['active' => url()->current() === route('laman.katalog')]) href="{{ route('laman.katalog') }}">Katalog</a></li>
                 <li><a @class(['active' => url()->current() === route('laman.transaksi')]) href="{{ route('laman.transaksi') }}">Transaksi</a></li>
                 <li><a @class(['active' => url()->current() === route('laman.tentang')]) href="{{ route('laman.tentang') }}">Tentang</a></li>
             </ul>
