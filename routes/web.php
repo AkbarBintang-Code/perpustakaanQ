@@ -17,4 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [BerandaController::class, 'index'])->name('beranda');
 
+Route::get('/laman/transaksi', [LamanController::class, 'transaksi'])->name('laman.transaksi');
+Route::post('/laman/transaksi', [LamanController::class, 'prosesTransaksi'])->name('laman.proses-transaksi');
 Route::get('/laman/tentang', [LamanController::class, 'tentang'])->name('laman.tentang');
