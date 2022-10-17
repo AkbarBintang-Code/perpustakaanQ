@@ -9,8 +9,8 @@ class Transaksi extends Model
 {
     use HasFactory;
 
-    public function hitungDenda(int $keterlambatan, int $denda): float|int
+    public function hitungPeminjaman(int $banyakbuku, int $harga): float|int
     {
-        return $keterlambatan * $denda;
+        return $banyakbuku * $harga;
     }
 }

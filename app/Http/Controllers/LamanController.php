@@ -17,13 +17,13 @@ class LamanController extends Controller
 
     public function prosesTransaksi(Request $request): Factory|View|Application
     {
-        $keterlambatan = $request->input('keterlambatan');
-        $denda = $request->input('denda');
+        $banyakbuku = $request->input('banyakbuku');
+        $harga = $request->input('harga');
 
-        $totalDenda = (new Transaksi())->hitungDenda($keterlambatan, $denda);
+        $totalBayar = (new Transaksi())->hitungPeminjaman($banyakbuku, $harga);
 
         return view('tampilan.laman.transaksi', [
-            'total_denda' => $totalDenda
+            'total_bayar' => $totalBayar
         ]);
     }
 
